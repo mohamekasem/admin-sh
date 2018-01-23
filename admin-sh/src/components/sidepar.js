@@ -5,11 +5,8 @@ class SidePar extends Component {
 
   render() {
     return (
-      <div className="">
-        <div className="col-sm-3 col-lg-12 col-custom">        
+        <div className="col-sm-3 col-custom">        
         <div className="sideNav">
-        <div>
-        </div>
           <div className="logo">
           <a href="https://shadow-anime.herokuapp.com" target="_blank" rel="noopener noreferrer">
             <div className="logo_img"> 
@@ -55,8 +52,7 @@ class SidePar extends Component {
             </li>
           </ul>
         </div>
-        </div>
-        <span style={{"fontSize":"30px"}} >&#9776;</span>
+        {/* <span style={{"fontSize":"30px"}} >&#9776;</span> */}
       </div>
     );
   }
