@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+import {Switch} from 'react-router-dom';
 
-// import Main from './components/main';
+// all components
+import Main from './components/main';
 import Sidepar from './components/sidepar';
-// import Card from './components/card';
 import Panel from './components/panel';
 
 import './App.css';
@@ -10,6 +12,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
+    <Router>
       <div>  
         {/* <div className="wrapper"> */}
         <div className="container-fluid">
@@ -18,11 +21,18 @@ class App extends Component {
               <Sidepar />                                            
             </div>
             <div className="col-sm-9">
-              <Panel />                
+            <Switch>
+        		 <Route exact path= '/' component= {Main}/>
+        		 <Route exact path= '/animelist' component= {Panel}/>
+             {/* <Route path='//' component={}/> */}
+        		 {/* <Route path= '/' component= {}/> */}
+             <Route render= {()=><p>Not Found</p>}/>
+           </Switch>
             </div>     
           </div>
         </div>
         </div>
+      </Router>
     );
   }
 }

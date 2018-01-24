@@ -12,8 +12,7 @@ export default class Panel extends Component {
         <Card />
       </div>
       </div>
-      </div>
-      
+      </div> 
     );
   }
 }

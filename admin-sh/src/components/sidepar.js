@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
+import {NavLink} from 'react-router-dom';
 
 class SidePar extends Component {
-  
-
   render() {
-    return (
+    return (        
         <div className="col-sm-3 col-custom">        
         <div className="sideNav">
           <div className="logo">
@@ -21,14 +20,18 @@ class SidePar extends Component {
           </div>
           <ul id="menu" className="">
             <li className="list-group-costum">
-              <a href="">
-              <i className="fa fa-tachometer" aria-hidden="true"></i><p>Dashboard</p>
-              </a>
+              <NavLink exact activeClassName='active' to='/'>              
+              {/* <a href=""> */}
+              <i className="fa fa-tachometer" aria-hidden="true"></i><p>Dashboard</p>                    
+              {/* </a> */}
+              </NavLink>      
             </li>
             <li className="list-group-costum">
-              <a href="">
-              <i className="fa fa-th-list" aria-hidden="true"></i><p>Anime List</p>
-              </a>
+              {/* <a href=""> */} 
+              <NavLink activeClassName='active' to='/animelist'>          
+                <i className="fa fa-th-list" aria-hidden="true"></i><p>Anime List</p>
+              </NavLink>
+              {/* </a> */}
             </li>
             <li className="list-group-costum">
               <a href="">
