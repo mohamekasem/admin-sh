@@ -232,10 +232,39 @@ a:hover{
 
 }
 /* in process */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
   .sideNav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+    color: #666;
+    background: #333;
+    width: 50px;
+    transition: width .5s;
+  }
+  .sideNav:hover {
+    width: 60px;
+  }
+
+  .sideNav p {
     display: none;
   }
-  
+  .sideNav .logo {
+    display: none;
+  }
+
+  .sideNav ul > li {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sideNav{
+    display: none;
+    transition: width .5s;
+  }
 }
 
