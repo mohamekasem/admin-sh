@@ -3,7 +3,6 @@ import {NavLink, Route} from 'react-router-dom';
 import ManagePanel from './managePanel';
 
 const Card = (props)=> { 
-  console.log(props,'pop')
     return (
       <div>
         <div className="col-lg-3 col-sm-6">
@@ -19,10 +18,8 @@ const Card = (props)=> {
             </div>
           </div>
           <Route render= {()=><p>Not Found</p>}/>
-
-          {/* <Route path={props.url+'/maneganime'} component={ManagePanel} /> */}
         </div>
-        </div>
+      </div>
     );
   }
 
