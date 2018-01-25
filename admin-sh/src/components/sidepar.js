@@ -19,14 +19,14 @@ class SidePar extends Component {
             </a>
           </div>
           <ul id="menu" className="">
-            <li className="list-group-costum">
+            <li className="list-group-costum ">
               <NavLink exact activeClassName='active' to='/'>              
               {/* <a href=""> */}
               <i className="fa fa-tachometer" aria-hidden="true"></i><p>Dashboard</p>                    
               {/* </a> */}
               </NavLink>      
             </li>
-            <li className="list-group-costum">
+            <li className="list-group-costum active">
               {/* <a href=""> */} 
               <NavLink activeClassName='active' to='/animelist'>          
                 <i className="fa fa-th-list" aria-hidden="true"></i><p>Anime List</p>

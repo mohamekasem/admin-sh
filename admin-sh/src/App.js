@@ -6,11 +6,11 @@ import {Switch} from 'react-router-dom';
 import Main from './components/main';
 import Sidepar from './components/sidepar';
 import Panel from './components/panel';
-
+import ManagePanel from './components/managePanel';
 import './App.css';
 
 class App extends Component {
-  render() {
+  render() {    
     return (
     <Router>
       <div>  
@@ -23,9 +23,8 @@ class App extends Component {
             <div className="col-sm-9">
             <Switch>
         		 <Route exact path= '/' component= {Main}/>
-        		 <Route exact path= '/animelist' component= {Panel}/>
-             {/* <Route path='//' component={}/> */}
-        		 {/* <Route path= '/' component= {}/> */}
+        		 <Route path= '/animelist' component= {Panel}/>
+             <Route path={'/maneganime'} component={ManagePanel} />
              <Route render= {()=><p>Not Found</p>}/>
            </Switch>
             </div>     
