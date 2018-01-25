@@ -217,6 +217,20 @@ a:hover{
   color: #fff;
 }
 
+
+/* manage panel  */
+.manage_box {
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid rgb(252, 116, 6);
+  border-radius: 10px;
+  /* background-color: rgb(252, 116, 6); */
+
+}
 /* in process */
 @media screen and (max-width: 400px) {
   .sideNav{

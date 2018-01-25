@@ -17,7 +17,6 @@ const Card = (props)=> {
             </NavLink>              
             </div>
           </div>
-          <Route render= {()=><p>Not Found</p>}/>
         </div>
       </div>
     );
